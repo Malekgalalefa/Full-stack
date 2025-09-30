@@ -1,0 +1,92 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 30px;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #ff6f91; /* pinkish stylish */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #ffd1dc;
+}
+
+/* Upload form */
+form#upload-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+form#upload-form input,
+form#upload-form button {
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+form#upload-form input:focus {
+    border-color: #ff6f91;
+    box-shadow: 0 0 5px rgba(255, 111, 145, 0.5);
+}
+
+form#upload-form button {
+    background-color: #ff6f91;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form#upload-form button:hover {
+    background-color: #ff85a2;
+}
+
+/* Table styling */
+table#records-table {
+    width: 70%;
+    margin: 0 auto 35px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table#records-table th,
+table#records-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table#records-table th {
+    background-color: #6a5acd; /* nice purple */
+    color: white;
+    font-size: 16px;
+}
+
+table#records-table tr:nth-child(even) {
+    background-color: #f9f6ff;
+}
+
+table#records-table tr:hover {
+    background-color: #e1dfff;
+}
+
+/* Chart canvas */
+canvas#records-chart {
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
